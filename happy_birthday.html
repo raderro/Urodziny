@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Życzenia</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <h1>Wszystkiego najlepszego!</h1>
+    <div class="zyczenia">
+        <div style="display: flex;">
+            <h3>W dniu Twoich urodzin życzę Ci wszystkiego najlepszego! Niech ten dzień będzie pełen radości i uśmiechu. Życzę Ci, aby spełniły się wszystkie Twoje marzenia i cele. Niech Cię otacza miłość, szczęście i pomyślność. Wszystkiego najlepszego!</h3>
+            <img src="images/avatar.jpg" alt="Avatar" class="avatar">
+        </div>
+        <h5 class="dostarczono" id="dostarczono">Dostarczono:</h5>
+    </div>
+
+    <div id="prezent" class="prezent">
+        <h2>Prezent</h2>
+        <p>W dniu Twoich urodzin chciałbym Ci złożyć prezent. Znajdziesz go po rozwiązaniu prostego memory. Mam nadzieję, że Ci się spodoba!</p>
+    </div>
+
+    <div id="particles"></div>
+
+    <div style="width:430px; margin-left: 38%">
+        <div id="game-board" class="board"></div>
+        <div id="game-over" class="game-over">
+            <h2>Gratulacje!</h2>
+            <p>Ukończyłaś grę!</p>
+        </div>
+    </div>
+    <div class="gift" id="gift">
+        <img id="gift-image" src="images/prezent.png" alt="Congratulations" draggable="false">
+        <br/>
+        <button class="button" id="gift-button">Otwórz</button>
+    </div>
+
+    <script src="script1.js"></script>
+    <script src="particles.js-master/particles.js"></script>
+</body>
+</html>

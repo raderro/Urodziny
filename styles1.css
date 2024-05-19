@@ -1,0 +1,135 @@
+body{
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('bg.jpg');
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.zyczenia {
+    color: white;
+    background-color: #1e90ff;
+    border-radius: 25px;
+    font-family: 'Segoe UI';
+    padding: 10px;
+    height: 100px;
+}
+
+.avatar{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: 60px;
+
+}
+
+.dostarczono{
+    width: 200px;
+    margin-top: -15px;
+    margin-left: -30px;
+}
+
+h1{
+    font-size: 64px;
+    text-shadow: 4px 6px 3px black;
+}
+
+p{
+    text-shadow: 4px 3px 3px black;
+    font-weight: bold;
+}
+
+img{
+    border-radius: 8px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 10px;
+}
+
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #1e90ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.card.flipped img {
+    display: block;
+}
+
+.card.flipped {
+    background-color: #ffffff;
+    cursor: default;
+}
+
+.game-over {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.game-over img {
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.gift{
+    display: none;
+}
+
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.particle {
+    position: fixed;
+    bottom: 0;
+    white-space: nowrap;
+    will-change: transform;
+    animation: moveUp 5s linear infinite;
+    user-select: none;
+}
+
+.button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
