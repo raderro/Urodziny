@@ -2,8 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const countdownElement = document.getElementById('countdown');
     const loginContainer = document.getElementById('login-container');
     
-    //const targetDate = new Date(2024, 7, 9, 0, 0, 0).getTime();
-    const targetDate = new Date(2024, 4, 9, 0, 0, 0).getTime();
+    const targetDate = new Date(2024, 7, 9, 0, 0, 0).getTime();
+    //const targetDate = new Date(2024, 4, 9, 0, 0, 0).getTime();
 
     const updateCountdown = () => {
         const now = new Date().getTime();
